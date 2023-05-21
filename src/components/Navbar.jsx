@@ -7,7 +7,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-lg" href='https://github.com/marlon-couto'>Marlon Couto</a>
+        <a className="btn btn-ghost normal-case text-lg" href='https://github.com/marloncoutodev'>Marlon Couto</a>
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
