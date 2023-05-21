@@ -52,5 +52,5 @@ Inicie o servidor
 
 ## Feedback
 
-Se você tiver algum feedback ou sugestão, por favor me envie um ![email](mailto:marloncouto199@gmail.com).
+Se você tiver algum feedback ou sugestão, por favor me envie um emasil: marloncouto199@gmail.com.
 
