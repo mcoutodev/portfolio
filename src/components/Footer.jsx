@@ -10,10 +10,10 @@ export default function Footer() {
         <p>&copy; Feito com <span className='text-red-400'>♥</span> em 2023 - Todos os direitos reservados</p>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a href='https://github.com/marloncoutodev'>
+        <a href='https://github.com/mcoutodev'>
           <GitHubIcon />
         </a>
-        <a href='https://linkedin.com/in/marloncoutodev'>
+        <a href='https://linkedin.com/in/mcoutodev'>
           <LinkedInIcon />
         </a>
       </div>
