@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { themeChange } from 'theme-change';
 
 import Context from '../../context/Context';

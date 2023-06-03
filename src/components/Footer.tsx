@@ -1,3 +1,5 @@
+import React from 'react';
+
 import GitHubIcon from './svg/GitHubIcon';
 import LinkedInIcon from './svg/LinkedInIcon';
 import Logo from './svg/Logo';

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import Context from '../../context/Context';
 
 export default function SunIcon() {

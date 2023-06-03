@@ -1,3 +1,4 @@
+import React from 'react';
 import Drawer from './components/Drawer';
 import Footer from './components/Footer';
 import Hero from './components/Hero';

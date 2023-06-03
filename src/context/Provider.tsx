@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
-import { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import Context from './Context';
+import { ProviderProps } from '../types/ProviderProps';
 
-export default function Provider({ children }) {
+export default function Provider({ children }: ProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 

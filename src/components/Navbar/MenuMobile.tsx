@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 
 import CloseIcon from '../svg/CloseIcon';
 import HamburgerIcon from '../svg/HamburgerIcon';

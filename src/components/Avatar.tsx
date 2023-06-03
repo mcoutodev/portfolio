@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Avatar() {
   return (
     <div className="avatar py-8">
