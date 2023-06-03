@@ -1,15 +1,35 @@
-import PropTypes from "prop-types";
-import { useMemo, useState } from 'react';
+import PropTypes from 'prop-types';
+import { useEffect, useMemo, useState } from 'react';
 
 import Context from './Context';
 
 export default function Provider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme') ?? 'dark';
+    if (theme === 'light') {
+      setDarkMode(false);
+    }
+  }, []);
+
+  const sections = useMemo(() => [
+    { name: 'Home', path: '/' },
+    { name: 'Sobre Mim', path: '/about' },
+    { name: 'Habilidades', path: '/skills' },
+    { name: 'Projetos', path: '/projects' },
+    { name: 'Quiz', path: '/quiz' },
+    { name: 'Contato', path: '/contact' },
+  ], []);
 
   const context = useMemo(() => ({
     isOpen,
     setIsOpen,
-  }), [isOpen]);
+    darkMode,
+    setDarkMode,
+    sections
+  }), [isOpen, darkMode, sections]);
 
   return (
     <Context.Provider value={context}>
