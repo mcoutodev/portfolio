@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Avatar from '../Avatar';
 import styles from './Hero.module.scss';
 
@@ -10,7 +9,7 @@ const Hero: React.FC = () => {
         <Avatar />
         <div>
           <div className={styles.animation}>
-            <span className={`${styles.first} text-primary`}>Hello,</span>
+            <span className={`${styles.first} text-primary bg-base-200`}>Hello,</span>
             <span className={styles.slide}>
               <span className={styles.second}>World!</span>
             </span>

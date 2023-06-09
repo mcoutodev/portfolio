@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import React, { PropsWithChildren, useContext } from 'react';
-
 import Context from '../context/Context';
 
 const Drawer: React.FC<PropsWithChildren> = ({ children }) => {

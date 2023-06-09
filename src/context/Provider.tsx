@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
-
 import Context from './Context';
 
 const Provider: React.FC<PropsWithChildren> = ({ children }) => {
