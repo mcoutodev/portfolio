@@ -664,6 +664,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/sass@npm:^1.45.0":
+  version: 1.45.0
+  resolution: "@types/sass@npm:1.45.0"
+  dependencies:
+    sass: "*"
+  checksum: 806b5ade9b331b838b41648e0f60aed5b7706f9d1ff5745ba7f244d4a8bfff45e64187be89952982d5d73af599c878baaeda45009d61773eb530b811970b1255
+  languageName: node
+  linkType: hard
+
 "@types/scheduler@npm:*":
   version: 0.16.3
   resolution: "@types/scheduler@npm:0.16.3"
@@ -3577,6 +3586,7 @@ __metadata:
     "@tailwindcss/typography": ^0.5.9
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
+    "@types/sass": ^1.45.0
     "@typescript-eslint/eslint-plugin": ^5.50.0
     "@vitejs/plugin-react": ^4.0.0
     autoprefixer: ^10.4.14
@@ -3952,6 +3962,19 @@ __metadata:
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0
+  languageName: node
+  linkType: hard
+
+"sass@npm:*":
+  version: 1.63.3
+  resolution: "sass@npm:1.63.3"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
+    source-map-js: ">=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: 41d1d7e875be738a8b5ef92bc722b20fd88f9fc8db61caa17dec37e0a53739cf28dc3b79481b1998c410c82c30247f473c2559e64cec7c4d851e5cea0434ec4e
   languageName: node
   linkType: hard
 

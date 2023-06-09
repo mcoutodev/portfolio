@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
 
 import Context from './Context';
-import { ProviderProps } from '../types/ProviderProps';
 
-export default function Provider({ children }: ProviderProps) {
+const Provider: React.FC<PropsWithChildren> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 
@@ -37,8 +36,10 @@ export default function Provider({ children }: ProviderProps) {
       {children}
     </Context.Provider>
   );
-}
+};
 
 Provider.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+export default Provider;

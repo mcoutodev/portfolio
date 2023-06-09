@@ -3,7 +3,7 @@ import React from 'react';
 import Avatar from '../Avatar';
 import styles from './Hero.module.scss';
 
-export default function Hero() {
+const Hero: React.FC = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -24,4 +24,6 @@ export default function Hero() {
       </div>
     </div>
   );
-}
+};
+
+export default Hero;

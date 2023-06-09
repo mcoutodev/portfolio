@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <>
       <Drawer>
@@ -14,4 +14,6 @@ export default function App() {
       </Drawer>
     </>
   );
-}
+};
+
+export default App;

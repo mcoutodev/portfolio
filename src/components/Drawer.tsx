@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import React, { useContext } from 'react';
+import React, { PropsWithChildren, useContext } from 'react';
 
 import Context from '../context/Context';
 
-export default function Drawer({ children }) {
+const Drawer: React.FC<PropsWithChildren> = ({ children }) => {
   const { isOpen, setIsOpen, sections } = useContext(Context);
 
   return (
@@ -26,8 +26,11 @@ export default function Drawer({ children }) {
       </div>
     </div>
   );
-}
+};
 
 Drawer.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+
+export default Drawer;

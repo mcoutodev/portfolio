@@ -7,7 +7,7 @@ import SunIcon from '../svg/SunIcon';
 import MenuMobile from './MenuMobile';
 import MenuDesktop from './MenuDesktop';
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
   const { darkMode, setDarkMode } = useContext(Context);
 
   useEffect(() => {
@@ -33,4 +33,6 @@ export default function Navbar() {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;

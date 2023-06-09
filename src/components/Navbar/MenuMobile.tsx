@@ -4,7 +4,7 @@ import CloseIcon from '../svg/CloseIcon';
 import HamburgerIcon from '../svg/HamburgerIcon';
 import Context from '../../context/Context';
 
-export default function MenuMobile() {
+const MenuMobile: React.FC = () => {
   const { isOpen, setIsOpen } = useContext(Context);
 
   return (
@@ -20,4 +20,6 @@ export default function MenuMobile() {
       </button>
     </div>
   );
-}
+};
+
+export default MenuMobile;

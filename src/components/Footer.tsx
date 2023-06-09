@@ -4,7 +4,7 @@ import GitHubIcon from './svg/GitHubIcon';
 import LinkedInIcon from './svg/LinkedInIcon';
 import Logo from './svg/Logo';
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="footer items-center p-4 bg-neutral text-neutral-content">
       <div className="items-center grid-flow-col">
@@ -21,4 +21,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
