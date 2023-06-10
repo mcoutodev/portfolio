@@ -1,0 +1,73 @@
+.animation {
+  font-size: 48px;
+  display: inline-block;
+  animation: fadein 1.5s forwards;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.first {
+  display: inline-block;
+  animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: 1;
+  position: relative;
+  font-weight: 500;
+}
+
+.slide {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.second {
+  font-weight: 300;
+  margin-left: 0.5rem;
+  z-index: -1;
+  display: inline-block;
+  animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes firstspan {
+  0% {
+    transform: translateX(50%);
+  }
+
+  60% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes secondspan {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  60% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
