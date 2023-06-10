@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import Avatar from '../Avatar';
 import styles from './Hero.module.scss';
 
-const Hero: React.FC = () => {
+const Hero: FC = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">

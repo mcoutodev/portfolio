@@ -1,13 +1,12 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect, FC } from 'react';
 import { themeChange } from 'theme-change';
-
 import Context from '../../context/Context';
 import MoonIcon from '../svg/MoonIcon';
 import SunIcon from '../svg/SunIcon';
 import MenuMobile from './MenuMobile';
 import MenuDesktop from './MenuDesktop';
 
-const Navbar: React.FC = () => {
+const Navbar: FC = () => {
   const { darkMode, setDarkMode } = useContext(Context);
 
   useEffect(() => {

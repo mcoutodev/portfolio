@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Avatar: React.FC = () => {
+const Avatar: FC = () => {
   return (
     <div className="avatar py-8">
       <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">

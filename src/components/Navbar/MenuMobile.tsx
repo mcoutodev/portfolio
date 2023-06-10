@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import { useContext, FC } from 'react';
 import CloseIcon from '../svg/CloseIcon';
 import HamburgerIcon from '../svg/HamburgerIcon';
 import Context from '../../context/Context';
 
-const MenuMobile: React.FC = () => {
+const MenuMobile: FC = () => {
   const { isOpen, setIsOpen } = useContext(Context);
 
   return (

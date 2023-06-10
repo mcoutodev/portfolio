@@ -13,9 +13,9 @@ type ContextType = {
 
 const Context = createContext<ContextType>({
   isOpen: false,
-  setIsOpen: () => {},
+  setIsOpen: () => { return; },
   darkMode: false,
-  setDarkMode: () => {},
+  setDarkMode: () => { return; },
   sections: [{ name: '', path: '' }],
 });
 

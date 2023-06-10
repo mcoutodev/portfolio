@@ -1,9 +1,9 @@
-import React from 'react';
+import { FC } from 'react';
 import GitHubIcon from './svg/GitHubIcon';
 import LinkedInIcon from './svg/LinkedInIcon';
 import Logo from './svg/Logo';
 
-const Footer: React.FC = () => {
+const Footer: FC = () => {
   return (
     <footer className="footer items-center p-4 bg-neutral text-neutral-content">
       <div className="items-center grid-flow-col">

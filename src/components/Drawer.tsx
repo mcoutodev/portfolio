@@ -1,8 +1,7 @@
-import PropTypes from "prop-types";
-import React, { PropsWithChildren, useContext } from 'react';
+import { FC, PropsWithChildren, useContext } from 'react';
 import Context from '../context/Context';
 
-const Drawer: React.FC<PropsWithChildren> = ({ children }) => {
+const Drawer: FC<PropsWithChildren> = ({ children }) => {
   const { isOpen, setIsOpen, sections } = useContext(Context);
 
   return (
@@ -14,7 +13,7 @@ const Drawer: React.FC<PropsWithChildren> = ({ children }) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 bg-base-100 text-base-content">
+        <ul className="menu p-4 w-80 bg-base-100 text-base-content h-screen">
           {/* Sidebar content here */}
           {sections.map(({ name, path }) => (
             <li key={name}>
@@ -26,10 +25,5 @@ const Drawer: React.FC<PropsWithChildren> = ({ children }) => {
     </div>
   );
 };
-
-Drawer.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
 
 export default Drawer;

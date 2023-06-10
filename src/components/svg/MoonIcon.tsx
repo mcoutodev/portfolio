@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import { useContext, FC } from 'react';
 import Context from '../../context/Context';
 
-const MoonIcon: React.FC = () => {
+const MoonIcon: FC = () => {
   const { darkMode } = useContext(Context);
 
   return (

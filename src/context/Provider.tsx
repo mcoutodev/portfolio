@@ -1,16 +1,13 @@
-import PropTypes from 'prop-types';
-import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react';
+import { FC, PropsWithChildren, useEffect, useMemo, useState } from 'react';
 import Context from './Context';
 
-const Provider: React.FC<PropsWithChildren> = ({ children }) => {
+const Provider: FC<PropsWithChildren> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const theme = localStorage.getItem('theme') ?? 'dark';
-    if (theme === 'light') {
-      setDarkMode(false);
-    }
+    if (theme === 'light') setDarkMode(false);
   }, []);
 
   const sections = useMemo(() => [
@@ -35,10 +32,6 @@ const Provider: React.FC<PropsWithChildren> = ({ children }) => {
       {children}
     </Context.Provider>
   );
-};
-
-Provider.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Provider;
