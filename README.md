@@ -45,10 +45,10 @@ Inicie o servidor
 
 ## Stack utilizada
 
-- ![React](https://react.dev/) - Biblioteca JS
-- ![TailwindCSS](https://tailwindcss.com/) - Framework CSS
-- ![DaisyUI](https://daisyui.com/) - Biblioteca de componentes Tailwind
-- ![React Router](https://reactrouter.com/en/main) - Roteamento para React
+- [React](https://react.dev/) - Biblioteca JS
+- [TailwindCSS](https://tailwindcss.com/) - Framework CSS
+- [DaisyUI](https://daisyui.com/) - Biblioteca de componentes Tailwind
+- [React Router](https://reactrouter.com/en/main) - Roteamento para React
 
 ## Feedback
 
