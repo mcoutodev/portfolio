@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Avatar from '../Avatar';
-import styles from './Hero.module.scss';
+import styles from './Hero.module.css';
 
 const Hero: FC = () => {
   return (
