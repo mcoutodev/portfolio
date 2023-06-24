@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { termDark, termLight } from './src/themes';
+
 export default {
   content: [
     './index.html',
@@ -6,6 +8,14 @@ export default {
   ],
   theme: {
     extend: {}
+  },
+  daisyui: {
+    themes: [
+      {
+        termDark,
+        termLight,
+      },
+    ],
   },
   plugins: [
     require('@tailwindcss/typography'),

@@ -1,10 +1,9 @@
 import { useContext, useEffect, FC } from 'react';
 import { themeChange } from 'theme-change';
-import Context from '../../context/Context';
-import MoonIcon from '../svg/MoonIcon';
-import SunIcon from '../svg/SunIcon';
+import Context from '../../../context/Context';
 import MenuMobile from './MenuMobile';
 import MenuDesktop from './MenuDesktop';
+import { MoonIcon, SunIcon } from '../../svg';
 
 const Navbar: FC = () => {
   const { darkMode, setDarkMode } = useContext(Context);
@@ -22,7 +21,7 @@ const Navbar: FC = () => {
       </div>
       <MenuDesktop />
       <div className="flex-none">
-        <button className="btn btn-circle btn-ghost" data-set-theme={darkMode ? 'light' : 'dark'} onClick={() => setDarkMode(!darkMode)}>
+        <button className="btn btn-circle btn-ghost" data-set-theme={darkMode ? 'termLight' : 'termDark'} onClick={() => setDarkMode(!darkMode)}>
           <label className="swap swap-rotate swap-active">
             {/* this hidden checkbox controls the state */}
             <SunIcon />

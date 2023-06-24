@@ -1,8 +1,6 @@
 import { FC } from 'react';
-import Drawer from './components/Drawer';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
+import Hero from './components/hero';
+import { Drawer, Navbar, Footer } from './components/layouts';
 
 const App: FC = () => {
   return (

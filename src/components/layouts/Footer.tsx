@@ -1,7 +1,5 @@
+import { GitHubIcon, LinkedInIcon, Logo } from '../svg';
 import { FC } from 'react';
-import GitHubIcon from './svg/GitHubIcon';
-import LinkedInIcon from './svg/LinkedInIcon';
-import Logo from './svg/Logo';
 
 const Footer: FC = () => {
   return (

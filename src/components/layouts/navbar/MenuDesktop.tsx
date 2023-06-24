@@ -1,5 +1,5 @@
 import { useContext, FC } from 'react';
-import Context from '../../context/Context';
+import Context from '../../../context/Context';
 
 const MenuDesktop: FC = () => {
   const { sections } = useContext(Context);

@@ -1,7 +1,6 @@
 import { useContext, FC } from 'react';
-import CloseIcon from '../svg/CloseIcon';
-import HamburgerIcon from '../svg/HamburgerIcon';
-import Context from '../../context/Context';
+import Context from '../../../context/Context';
+import { CloseIcon, HamburgerIcon } from '../../svg';
 
 const MenuMobile: FC = () => {
   const { isOpen, setIsOpen } = useContext(Context);

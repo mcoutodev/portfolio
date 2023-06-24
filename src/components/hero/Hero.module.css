@@ -1,14 +1,18 @@
+:root {
+  --cb: cubic-bezier(0.785, 0.135, 0.15, 0.86)
+}
+
 .animation {
   font-size: 48px;
   display: inline-block;
   animation: fadein 1.5s forwards;
   opacity: 0;
-  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-timing-function: var(--cb);
 }
 
 .first {
   display: inline-block;
-  animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: firstspan 1.5s forwards var(--cb);
   z-index: 1;
   position: relative;
   font-weight: 500;
@@ -24,7 +28,7 @@
   margin-left: 0.5rem;
   z-index: -1;
   display: inline-block;
-  animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: secondspan 1.5s forwards var(--cb);
 }
 
 @keyframes fadein {
