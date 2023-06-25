@@ -14,7 +14,6 @@ module.exports = {
         '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
         '@typescript-eslint/no-explicit-any': 'on',
         '@typescript-eslint/no-unused-vars': 'off',
-        'jsx-quotes': ['error', 'prefer-double'],
         '@typescript-eslint/indent': ['error', 4],
         '@typescript-eslint/semi': ['error', 'always'],
         'react-refresh/only-export-components': 'warn',
