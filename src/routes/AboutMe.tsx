@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 export const AboutMe: FC = () => {
     return (
-        <div>AboutMe</div>
+        <main>
+            <h1>Sobre mim</h1>
+        </main>
     );
 };
