@@ -1,3 +1,5 @@
 tailwind.config.js
 node_modules
 dist
+.eslintrc.cjs
+vite.config.ts
