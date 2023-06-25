@@ -37,7 +37,7 @@ Instale as dependências
   npm install
 ```
 
-Inicie o servidor em `localhost:5173/portfolio`
+Inicie o servidor em `localhost:5173`
 
 ```bash
   npm run dev
