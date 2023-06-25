@@ -13,11 +13,11 @@ Esse é meu portfólio pessoal, hospedado em GitHub Pages.
 
 ## Funcionalidades
 
-- Temas dark e light
-- Multiplataforma
-- Layout responsivo
+-   Temas dark e light
+-   Multiplataforma
+-   Layout responsivo
 
-## Rodando localmente
+## Rodando o front-end localmente
 
 Clone o projeto
 
@@ -28,7 +28,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd portfolio
+  cd portfolio/frontend
 ```
 
 Instale as dependências
@@ -37,7 +37,7 @@ Instale as dependências
   npm install
 ```
 
-Inicie o servidor
+Inicie o servidor em `localhost:5173/portfolio`
 
 ```bash
   npm run dev
@@ -45,12 +45,11 @@ Inicie o servidor
 
 ## Stack utilizada
 
-- [React](https://react.dev/) - Biblioteca JS
-- [TailwindCSS](https://tailwindcss.com/) - Framework CSS
-- [DaisyUI](https://daisyui.com/) - Biblioteca de componentes Tailwind
-- [React Router](https://reactrouter.com/en/main) - Roteamento para React
+-   [React](https://react.dev/) - Biblioteca JS
+-   [TailwindCSS](https://tailwindcss.com/) - Framework CSS
+-   [DaisyUI](https://daisyui.com/) - Biblioteca de componentes Tailwind
+-   [React Router](https://reactrouter.com/en/main) - Roteamento para React
 
 ## Feedback
 
 Se você tiver algum feedback ou sugestão, por favor me envie um email: marloncouto199@gmail.com.
-
