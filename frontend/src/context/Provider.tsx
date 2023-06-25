@@ -12,12 +12,12 @@ export const Provider: FC<PropsWithChildren> = ({ children }) => {
     }, []);
 
     const sections = useMemo(() => [
-        { name: '// Home', path: '/portfolio' },
-        { name: '// Sobre Mim', path: '/portfolio/about' },
-        { name: '// Habilidades', path: '/portfolio/skills' },
-        { name: '// Projetos', path: '/portfolio/projects' },
-        { name: '// Quiz', path: '/portfolio/quiz' },
-        { name: '// Contato', path: '/portfolio/contact' },
+        { name: '// Home', path: '/' },
+        { name: '// Sobre Mim', path: '/about' },
+        { name: '// Habilidades', path: '/skills' },
+        { name: '// Projetos', path: '/projects' },
+        { name: '// Quiz', path: '/quiz' },
+        { name: '// Contato', path: '/contact' },
     ], []);
 
     const context = useMemo(() => ({
