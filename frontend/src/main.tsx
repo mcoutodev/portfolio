@@ -15,8 +15,8 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             { path: '/', element: <Home /> },
-            { path: '/portfolio', element: <Home /> },
             { path: '/about', element: <AboutMe /> },
+            { path: '*', element: <Home /> }, // redireciona para a home caso a rota não exista
         ],
     },
 ]);
