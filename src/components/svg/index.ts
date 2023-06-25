@@ -1,17 +1,17 @@
 import CloseIcon from './CloseIcon';
 import GitHubIcon from './GitHubIcon';
-import LinkedInIcon from './LinkedInIcon';
 import HamburgerIcon from './HamburgerIcon';
+import LinkedInIcon from './LinkedInIcon';
+import Logo from './Logo';
 import MoonIcon from './MoonIcon';
 import SunIcon from './SunIcon';
-import Logo from './Logo';
 
 export {
-  CloseIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  HamburgerIcon,
-  MoonIcon,
-  SunIcon,
-  Logo,
+    CloseIcon,
+    GitHubIcon,
+    LinkedInIcon,
+    HamburgerIcon,
+    MoonIcon,
+    SunIcon,
+    Logo,
 };
