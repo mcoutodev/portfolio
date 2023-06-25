@@ -19,7 +19,7 @@ export const Drawer: FC<PropsWithChildren> = ({ children }) => {
                     {/* Sidebar content here */}
                     {sections.map(({ name, path }) => (
                         <li key={name}>
-                            <Link to={path} className='text-base'>
+                            <Link to={path} className="text-base" onClick={() => setIsOpen(false)}>
                                 {name}
                             </Link>
                         </li>

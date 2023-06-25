@@ -1,9 +1,11 @@
 import { FC } from 'react';
+import { Avatar, Code } from '../components';
 
 export const AboutMe: FC = () => {
     return (
-        <main>
-            <h1>Sobre mim</h1>
+        <main className="flex flex-col items-center">
+            <Avatar />
+            <Code />
         </main>
     );
 };

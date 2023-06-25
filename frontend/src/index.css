@@ -4,6 +4,6 @@
 
 @layer base {
     main {
-        @apply p-4 h-screen;
+        @apply p-4 min-h-screen bg-base-200;
     }
 }

@@ -17,7 +17,7 @@ export const Hero: FC = () => {
                     </div>
                     <p className="py-6">
                         Eu sou um desenvolvedor web com experiência em TypeScript, React, Tailwind e Node.js.
-                        Bem-vindo ao meu portfólio pessoal, a casa é sua! 💚
+                        Bem-vindo ao meu portfólio pessoal, a casa é sua! 👋
                     </p>
                     <button className="btn btn-primary">Começar</button>
                 </div>
