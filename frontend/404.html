@@ -6,7 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <title>404</title>
-    <link rel="stylesheet" href="404.css">
+    <style>
+        :root {
+            --bg: #212121;
+            --text: #d1d1d1;
+            --accent: #3EF45C
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: -1.25rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        small {
+            margin-top: -1rem;
+        }
+
+        a {
+            color: var(--text);
+            margin-top: 2.5rem;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+    </style>
 </head>
 
 <body>
