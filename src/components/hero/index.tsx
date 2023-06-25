@@ -6,7 +6,7 @@ const { animation, first, slide, second } = styles;
 
 export const Hero: FC = () => {
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <main className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div>
                     <div className={animation}>
@@ -22,6 +22,6 @@ export const Hero: FC = () => {
                     <button className="btn btn-primary">Começar</button>
                 </div>
             </div>
-        </div>
+        </main>
     );
 };
