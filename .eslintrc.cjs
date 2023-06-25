@@ -9,7 +9,7 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-    plugins: ['react-refresh'],
+    plugins: ['react-refresh', 'unused-imports'],
     rules: {
         'react-refresh/only-export-components': 'warn',
         'import/order': [
@@ -19,6 +19,16 @@ module.exports = {
                 groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
                 'newlines-between': 'always',
             },
+        ],
+        'unused-imports/no-unused-imports-ts': 'error',
+        'unused-imports/no-unused-vars-ts': [
+            'warn',
+            {
+                'vars': 'all',
+                'varsIgnorePattern': '^_',
+                'args': 'after-used',
+                'argsIgnorePattern': '^_',
+            }
         ],
     },
 };
