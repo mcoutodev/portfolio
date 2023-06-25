@@ -1,13 +1,13 @@
 import { useContext, useEffect, FC } from 'react';
 import { themeChange } from 'theme-change';
 
-import Context from '../../../context/Context';
+import { Context } from '../../../context/Context';
 import { MoonIcon, SunIcon } from '../../svg';
 
-import MenuDesktop from './MenuDesktop';
-import MenuMobile from './MenuMobile';
+import { MenuDesktop } from './MenuDesktop';
+import { MenuMobile } from './MenuMobile';
 
-const Navbar: FC = () => {
+export const Navbar: FC = () => {
     const { darkMode, setDarkMode } = useContext(Context);
 
     useEffect(() => {
@@ -34,5 +34,3 @@ const Navbar: FC = () => {
         </div>
     );
 };
-
-export default Navbar;

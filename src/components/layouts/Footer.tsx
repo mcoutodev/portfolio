@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import { GitHubIcon, LinkedInIcon, Logo } from '../svg';
 
-const Footer: FC = () => {
+export const Footer: FC = () => {
     return (
         <footer className="footer items-center p-4 bg-neutral text-neutral-content">
             <div className="items-center grid-flow-col">
@@ -20,5 +20,3 @@ const Footer: FC = () => {
         </footer>
     );
 };
-
-export default Footer;

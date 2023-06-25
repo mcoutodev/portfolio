@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren, useEffect, useMemo, useState } from 'react';
 
-import Context from './Context';
+import { Context } from './Context';
 
-const Provider: FC<PropsWithChildren> = ({ children }) => {
+export const Provider: FC<PropsWithChildren> = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(true);
 
@@ -34,5 +34,3 @@ const Provider: FC<PropsWithChildren> = ({ children }) => {
         </Context.Provider>
     );
 };
-
-export default Provider;

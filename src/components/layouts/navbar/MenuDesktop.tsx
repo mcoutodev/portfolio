@@ -1,8 +1,8 @@
 import { useContext, FC } from 'react';
 
-import Context from '../../../context/Context';
+import { Context } from '../../../context/Context';
 
-const MenuDesktop: FC = () => {
+export const MenuDesktop: FC = () => {
     const { sections } = useContext(Context);
 
     return (
@@ -15,5 +15,3 @@ const MenuDesktop: FC = () => {
         </ul>
     );
 };
-
-export default MenuDesktop;

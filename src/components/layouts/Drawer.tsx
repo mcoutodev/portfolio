@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren, useContext } from 'react';
 
-import Context from '../../context/Context';
+import { Context } from '../../context/Context';
 
-const Drawer: FC<PropsWithChildren> = ({ children }) => {
+export const Drawer: FC<PropsWithChildren> = ({ children }) => {
     const { isOpen, setIsOpen, sections } = useContext(Context);
 
     return (
@@ -26,5 +26,3 @@ const Drawer: FC<PropsWithChildren> = ({ children }) => {
         </div>
     );
 };
-
-export default Drawer;

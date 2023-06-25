@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-const Avatar: FC = () => {
+export const Avatar: FC = () => {
     return (
         <div className="avatar py-8">
             <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -9,5 +9,3 @@ const Avatar: FC = () => {
         </div>
     );
 };
-
-export default Avatar;

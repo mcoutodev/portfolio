@@ -1,9 +1,9 @@
 import { useContext, FC } from 'react';
 
-import Context from '../../../context/Context';
+import { Context } from '../../../context/Context';
 import { CloseIcon, HamburgerIcon } from '../../svg';
 
-const MenuMobile: FC = () => {
+export const MenuMobile: FC = () => {
     const { isOpen, setIsOpen } = useContext(Context);
 
     return (
@@ -20,5 +20,3 @@ const MenuMobile: FC = () => {
         </div>
     );
 };
-
-export default MenuMobile;

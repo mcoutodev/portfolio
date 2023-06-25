@@ -4,7 +4,7 @@ import styles from './Hero.module.css';
 
 const { animation, first, slide, second } = styles;
 
-const Hero: FC = () => {
+export const Hero: FC = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -25,5 +25,3 @@ const Hero: FC = () => {
         </div>
     );
 };
-
-export default Hero;
