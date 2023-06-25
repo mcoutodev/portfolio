@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 import { Drawer, Navbar, Footer } from './components/layouts';
 
-const App: FC = () => {
+export const App: FC = () => {
     return (
         <>
             <Drawer>
@@ -14,5 +14,3 @@ const App: FC = () => {
         </>
     );
 };
-
-export default App;
