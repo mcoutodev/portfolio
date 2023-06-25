@@ -12,7 +12,7 @@ module.exports = {
     plugins: ['react-refresh', 'unused-imports'],
     rules: {
         '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
-        '@typescript-eslint/no-explicit-any': 'on',
+        '@typescript-eslint/no-explicit-any': 1,
         '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/indent': ['error', 4],
         '@typescript-eslint/semi': ['error', 'always'],
