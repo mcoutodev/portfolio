@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren, useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Context } from '../../context/Context';
 
@@ -18,7 +19,9 @@ export const Drawer: FC<PropsWithChildren> = ({ children }) => {
                     {/* Sidebar content here */}
                     {sections.map(({ name, path }) => (
                         <li key={name}>
-                            <a href={path}>{name}</a>
+                            <Link to={path} className='text-base'>
+                                {name}
+                            </Link>
                         </li>
                     ))}
                 </ul>

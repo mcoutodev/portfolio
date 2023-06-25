@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { Drawer, Navbar, Footer } from './components/layouts';
+import { Drawer, Navbar, Footer } from './components/layout';
 
 export const App: FC = () => {
     return (
