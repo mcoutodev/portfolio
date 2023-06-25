@@ -7,7 +7,7 @@ export const MenuDesktop: FC = () => {
     const { sections } = useContext(Context);
 
     return (
-        <ul className="md:menu md:menu-horizontal bg-base-100 mr-4 hidden">
+        <ul className="lg:menu lg:menu-horizontal bg-base-100 mr-4 hidden">
             {sections.map(({ name, path }) => (
                 <li key={name}>
                     <Link to={path} className="hover:text-secondary transition text-base">
