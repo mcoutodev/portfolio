@@ -22,13 +22,13 @@ Esse é meu portfólio pessoal, hospedado em GitHub Pages.
 Clone o projeto
 
 ```bash
-  git clone git@github.com:marloncoutodev/portfolio.git
+  git clone git@github.com:marloncoutodev/mcoutodev.github.io.git
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd portfolio/frontend
+  cd mcoutodev.github.io/frontend
 ```
 
 Instale as dependências
