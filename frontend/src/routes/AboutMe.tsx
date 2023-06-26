@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { Avatar, Code } from '../components';
 
 export const AboutMe: FC = () => {

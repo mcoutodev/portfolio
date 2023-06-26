@@ -4,8 +4,12 @@ import { ContextType } from '../types/ContextType';
 
 export const Context = createContext<ContextType>({
     isOpen: false,
-    setIsOpen: () => { return; },
+    setIsOpen: () => {
+        return;
+    },
     darkMode: false,
-    setDarkMode: () => { return; },
+    setDarkMode: () => {
+        return;
+    },
     sections: [{ name: '', path: '' }],
 });

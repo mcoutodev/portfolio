@@ -19,11 +19,20 @@ export const Navbar: FC = () => {
         <div className="navbar bg-base-100">
             <MenuMobile />
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-lg" href='https://github.com/mcoutodev'>Marlon Couto</a>
+                <a
+                    className="btn btn-ghost normal-case text-lg"
+                    href="https://github.com/mcoutodev"
+                >
+                    Marlon Couto
+                </a>
             </div>
             <MenuDesktop />
             <div className="flex-none">
-                <button className="btn btn-circle btn-ghost" data-set-theme={darkMode ? 'termLight' : 'termDark'} onClick={() => setDarkMode(!darkMode)}>
+                <button
+                    className="btn btn-circle btn-ghost"
+                    data-set-theme={darkMode ? 'termLight' : 'termDark'}
+                    onClick={() => setDarkMode(!darkMode)}
+                >
                     <label className="swap swap-rotate swap-active">
                         {/* this hidden checkbox controls the state */}
                         <SunIcon />

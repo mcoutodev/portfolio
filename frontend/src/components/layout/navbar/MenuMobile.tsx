@@ -12,7 +12,11 @@ export const MenuMobile: FC = () => {
             <button className="btn btn-circle btn-ghost">
                 <label className="swap swap-rotate">
                     {/* this hidden checkbox controls the state */}
-                    <input type="checkbox" onChange={() => setIsOpen(!isOpen)} checked={isOpen} />
+                    <input
+                        type="checkbox"
+                        onChange={() => setIsOpen(!isOpen)}
+                        checked={isOpen}
+                    />
                     <HamburgerIcon />
                     <CloseIcon />
                 </label>

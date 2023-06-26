@@ -11,26 +11,28 @@ export const Provider: FC<PropsWithChildren> = ({ children }) => {
         if (theme === 'light') setDarkMode(false);
     }, []);
 
-    const sections = useMemo(() => [
-        { name: '// Home', path: '/' },
-        { name: '// Sobre Mim', path: '/about' },
-        { name: '// Habilidades', path: '/skills' },
-        { name: '// Projetos', path: '/projects' },
-        { name: '// Quiz', path: '/quiz' },
-        { name: '// Contato', path: '/contact' },
-    ], []);
-
-    const context = useMemo(() => ({
-        isOpen,
-        setIsOpen,
-        darkMode,
-        setDarkMode,
-        sections
-    }), [isOpen, darkMode, sections]);
-
-    return (
-        <Context.Provider value={context}>
-            {children}
-        </Context.Provider>
+    const sections = useMemo(
+        () => [
+            { name: '// Home', path: '/' },
+            { name: '// Sobre Mim', path: '/about' },
+            { name: '// Habilidades', path: '/skills' },
+            { name: '// Projetos', path: '/projects' },
+            { name: '// Quiz', path: '/quiz' },
+            { name: '// Contato', path: '/contact' },
+        ],
+        []
     );
+
+    const context = useMemo(
+        () => ({
+            isOpen,
+            setIsOpen,
+            darkMode,
+            setDarkMode,
+            sections,
+        }),
+        [isOpen, darkMode, sections]
+    );
+
+    return <Context.Provider value={context}>{children}</Context.Provider>;
 };
