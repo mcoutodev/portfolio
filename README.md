@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Esse é meu portfólio pessoal, hospedado em GitHub Pages.
+Esse é meu portfólio pessoal, hospedado no GitHub Pages.
 
 ## Etiquetas
 
@@ -10,6 +10,7 @@ Esse é meu portfólio pessoal, hospedado em GitHub Pages.
 ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 
 ## Funcionalidades
 
