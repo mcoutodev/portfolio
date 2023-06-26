@@ -7,7 +7,8 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
-        "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+        "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
         "preview": "vite preview",
         "deploy": "tsc && vite build && cp 404.html dist && gh-pages -d dist"
     },
@@ -33,6 +34,7 @@
         "eslint-plugin-unused-imports": "^2.0.0",
         "gh-pages": "^5.0.0",
         "postcss": "^8.4.24",
+        "prettier": "^2.8.8",
         "tailwindcss": "^3.3.2",
         "typescript": "^5.0.2",
         "vite": "^4.3.9"
