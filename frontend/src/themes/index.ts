@@ -1,3 +1,5 @@
+// exporta os temas para serem usados pelo DaisyUI
+
 export const termDark = {
     'primary': '#3ef45c',
     'secondary': '#c730d5',

@@ -8,7 +8,7 @@ export const App: FC = () => {
         <>
             <Drawer>
                 <Navbar />
-                <Outlet />
+                <Outlet /> {/* renderiza os componentes filhos da rota "/" */}
                 <Footer />
             </Drawer>
         </>

@@ -6,11 +6,13 @@ export const Provider: FC<PropsWithChildren> = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(true);
 
+    // verifica o tema salvo no localStorage
     useEffect(() => {
         const theme = localStorage.getItem('theme') ?? 'dark';
         if (theme === 'light') setDarkMode(false);
     }, []);
 
+    // disponibiliza as rotas e seus nomes para a aplicação
     const sections = useMemo(
         () => [
             { name: '// Home', path: '/' },
@@ -23,6 +25,9 @@ export const Provider: FC<PropsWithChildren> = ({ children }) => {
         []
     );
 
+    // disponibiliza o contexto para a aplicação
+    // o useMemo é usado para evitar que o contexto seja recriado
+    // a cada renderização do componente
     const context = useMemo(
         () => ({
             isOpen,

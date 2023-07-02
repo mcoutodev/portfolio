@@ -9,6 +9,7 @@ import { Home } from './routes/Home';
 
 import './index.css';
 
+// cria um roteador com as rotas da aplicação
 const router = createBrowserRouter([
     {
         path: '/',
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root') as HTMLElement).render(
     <StrictMode>
-        <Provider>
-            <RouterProvider router={router} />
+        <Provider> {/* contexto da aplicação */}
+            <RouterProvider router={router} /> {/* roteador da aplicação */}
         </Provider>
     </StrictMode>
 );
