@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Hero.module.css';
 
@@ -22,7 +23,9 @@ export const Hero: FC = () => {
                         TypeScript, React, Tailwind e Node.js. Bem-vindo ao meu
                         portfólio pessoal, a casa é sua! 👋
                     </p>
-                    <button className="btn btn-primary">Começar</button>
+                    <Link to="/about">
+                        <button className="btn btn-primary">Começar</button>
+                    </Link>
                 </div>
             </div>
         </main>
