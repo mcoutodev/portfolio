@@ -12,6 +12,7 @@ export const Footer: FC = () => {
                     2023 - Todos os direitos reservados
                 </p>
             </div>
+
             <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                 <a href="https://github.com/mcoutodev">
                     <GitHubIcon />
