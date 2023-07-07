@@ -13,7 +13,7 @@ export const Footer: FC = () => {
                 </p>
             </div>
             <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                <a href="https://github.com/mcoutodev">
+                <a href="https://github.com/mcoutodev/mcoutodev.github.io">
                     <GitHubIcon />
                 </a>
                 <a href="https://linkedin.com/in/mcoutodev">
