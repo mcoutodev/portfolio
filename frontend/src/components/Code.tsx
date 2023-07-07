@@ -6,7 +6,7 @@ export const Code: FC = () => {
             <pre data-prefix="$">
                 <code>cat marlon_couto_dev.txt</code>
             </pre>
-            
+
             <pre
                 data-prefix=">"
                 className="text-success"
@@ -32,7 +32,7 @@ export const Code: FC = () => {
                 data-prefix=">"
                 className="text-success"
             >
-                <code>Profissão: Desenvolvedor web</code>
+                <code>Profissão: Desenvolvedor</code>
             </pre>
 
             <pre data-prefix=">">
