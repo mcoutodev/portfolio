@@ -15,10 +15,12 @@ export const Drawer: FC<PropsWithChildren> = ({ children }) => {
                 checked={isOpen}
                 onChange={() => setIsOpen(false)}
             />
+
             <div className="drawer-content">
                 {/* Page content here */}
                 {children}
             </div>
+
             <div className="drawer-side">
                 <label
                     htmlFor="my-drawer"

@@ -18,6 +18,7 @@ export const Navbar: FC = () => {
     return (
         <div className="navbar bg-base-100">
             <MenuMobile />
+
             <div className="flex-1">
                 <a
                     className="btn btn-ghost normal-case text-lg"
@@ -26,7 +27,9 @@ export const Navbar: FC = () => {
                     Marlon Couto
                 </a>
             </div>
+
             <MenuDesktop />
+
             <div className="flex-none">
                 <button
                     className="btn btn-circle btn-ghost"
