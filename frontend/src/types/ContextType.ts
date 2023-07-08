@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export type ContextType = {
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
@@ -6,5 +8,10 @@ export type ContextType = {
     sections: {
         name: string;
         path: string;
+    }[];
+    skills: {
+        name: string;
+        icon: ReactNode;
+        level: number;
     }[];
 };
