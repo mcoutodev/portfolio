@@ -7,7 +7,7 @@ export const termDark = {
     'neutral': '#333',
     'base-100': '#333',
     'info': '#5e69de',
-    'success': '#3ef45c',
+    'success': '#4ddb88',
     'warning': '#fbbd23',
     'error': '#f87272',
 };
