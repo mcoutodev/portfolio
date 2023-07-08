@@ -1,5 +1,9 @@
 import { FC } from 'react';
-import { isRouteErrorResponse, useNavigate, useRouteError } from 'react-router-dom';
+import {
+    isRouteErrorResponse,
+    useNavigate,
+    useRouteError,
+} from 'react-router-dom';
 
 export const ErrorPage: FC = () => {
     // exibe corretamente o erro que ocorreu ao carregar a página
@@ -20,14 +24,24 @@ export const ErrorPage: FC = () => {
     const navigate = useNavigate();
 
     return (
-        <main id="error-page" className='flex flex-col gap-4 justify-center items-center'>
+        <main
+            id="error-page"
+            className="flex flex-col gap-4 justify-center items-center"
+        >
             <h1 className="text-4xl text-center">Erro!</h1>
-            <p className="text-center text-xl">Ocorreu um erro ao carregar a página.</p>
-            <p className="text-warning my-4">
+            <p className="text-center text-xl">
+                Ocorreu um erro ao carregar a página:
+            </p>
+            <p className="text-warning mb-4">
                 <code>{errorMessage}</code>
             </p>
             {/* permite retornar à página anterior */}
-            <button onClick={() => navigate(-1)} className="btn btn-primary w-32">Voltar</button>
+            <button
+                onClick={() => navigate(-1)}
+                className="btn btn-primary w-32"
+            >
+                Voltar
+            </button>
         </main>
     );
 };
