@@ -7,6 +7,7 @@ import { ErrorPage } from './components';
 import { Provider } from './context/Provider';
 import { AboutMe } from './routes/AboutMe';
 import { Home } from './routes/Home';
+import { Skills } from './routes/Skills';
 
 import './index.css';
 
@@ -19,13 +20,16 @@ const router = createBrowserRouter([
         children: [
             { path: '/', element: <Home /> },
             { path: '/about', element: <AboutMe /> },
+            { path: '/skills', element: <Skills /> },
         ],
     },
 ]);
 
 createRoot(document.getElementById('root') as HTMLElement).render(
     <StrictMode>
-        <Provider> {/* contexto da aplicação */}
+        <Provider>
+            {' '}
+            {/* contexto da aplicação */}
             <RouterProvider router={router} /> {/* roteador da aplicação */}
         </Provider>
     </StrictMode>
