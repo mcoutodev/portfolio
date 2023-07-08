@@ -1,4 +1,5 @@
 import { useContext, useEffect, FC } from 'react';
+import { Link } from 'react-router-dom';
 import { themeChange } from 'theme-change';
 
 import { Context } from '../../../context/Context';
@@ -20,12 +21,12 @@ export const Navbar: FC = () => {
             <MenuMobile />
 
             <div className="flex-1">
-                <a
+                <Link
                     className="btn btn-ghost normal-case text-lg"
-                    href="https://github.com/mcoutodev"
+                    to="/"
                 >
                     Marlon Couto
-                </a>
+                </Link>
             </div>
 
             <MenuDesktop />
