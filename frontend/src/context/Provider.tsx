@@ -29,19 +29,6 @@ export const Provider: FC<PropsWithChildren> = ({ children }) => {
         if (theme === 'light') setDarkMode(false);
     }, []);
 
-    // disponibiliza as rotas e seus nomes para a aplicação
-    const sections = useMemo(
-        () => [
-            { name: '// Home', path: '/' },
-            { name: '// Sobre Mim', path: '/about' },
-            { name: '// Habilidades', path: '/skills' },
-            { name: '// Projetos', path: '/projects' },
-            { name: '// Quiz', path: '/quiz' },
-            { name: '// Contato', path: '/contact' },
-        ],
-        []
-    );
-
     // lista de habilidades
     const skills = useMemo(
         () => [
@@ -72,10 +59,9 @@ export const Provider: FC<PropsWithChildren> = ({ children }) => {
             setIsOpen,
             darkMode,
             setDarkMode,
-            sections,
             skills,
         }),
-        [isOpen, darkMode, sections, skills]
+        [isOpen, darkMode, skills]
     );
 
     return <Context.Provider value={context}>{children}</Context.Provider>;

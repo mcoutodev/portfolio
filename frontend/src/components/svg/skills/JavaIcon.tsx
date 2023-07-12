@@ -5,7 +5,7 @@ export const JavaIcon: FC = () => {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             height="5em"
-            className="fill-current group-hover:fill-[#e76f00] transition duration-700"
+            className="fill-current group-hover:fill-[#e76f00] transition duration-500"
             viewBox="0 0 384 512"
         >
             {/* <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --> */}

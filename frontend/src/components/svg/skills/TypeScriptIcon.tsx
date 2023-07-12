@@ -9,7 +9,7 @@ export const TypeScriptIcon: FC = () => {
             height="4rem"
         >
             <path
-                className="fill-current transition group-hover:fill-[#4576c3] duration-700"
+                className="fill-current transition group-hover:fill-[#4576c3] duration-500"
                 d="M0 200V0h400v400H0"
             />
             <path

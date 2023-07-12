@@ -4,7 +4,7 @@ export const MySQLIcon: FC = () => {
     return (
         <svg
             height="4rem"
-            className="fill-current group-hover:fill-[#05638c] transition duration-700"
+            className="fill-current group-hover:fill-[#05638c] transition duration-500"
             viewBox="0 0 256 252"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMinYMin meet"

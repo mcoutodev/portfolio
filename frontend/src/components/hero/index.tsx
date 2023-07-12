@@ -19,13 +19,19 @@ export const Hero: FC = () => {
                         </span>
                     </div>
 
-                    <p className="py-6">
+                    <p className="py-6 md:text-lg">
                         Eu sou um desenvolvedor web com experiência em
-                        TypeScript, React, Tailwind e Node.js. Bem-vindo ao meu
-                        portfólio pessoal, a casa é sua! 👋
+                        <span className="text-primary"> TypeScript</span>,
+                        <span className="text-primary"> React</span>,
+                        <span className="text-primary"> Tailwind</span> e
+                        <span className="text-primary"> Node.js</span>.
+                        Bem-vindo ao meu portfólio pessoal, a casa é sua! 👋
                     </p>
 
-                    <Link to="/about">
+                    <Link
+                        to="/about"
+                        title="Clique para saber mais"
+                    >
                         <button className="btn btn-primary">Começar</button>
                     </Link>
                 </div>

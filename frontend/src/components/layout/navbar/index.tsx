@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { themeChange } from 'theme-change';
 
 import { Context } from '../../../context/Context';
-import { MoonIcon, SunIcon } from '../../svg';
+import { HomeIcon, MoonIcon, SunIcon } from '../../svg';
 
 import { MenuDesktop } from './MenuDesktop';
 import { MenuMobile } from './MenuMobile';
@@ -17,13 +17,21 @@ export const Navbar: FC = () => {
     }, []);
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 pr-4">
             <MenuMobile />
 
             <div className="flex-1">
                 <Link
-                    className="btn btn-ghost normal-case text-lg"
+                    title="Voltar para a página inicial"
                     to="/"
+                    className="hidden md:btn md:btn-ghost"
+                >
+                    <HomeIcon />
+                </Link>
+                <Link
+                    title="Acesse meus contatos"
+                    className="btn btn-ghost normal-case text-lg"
+                    to="/contacts"
                 >
                     Marlon Couto
                 </Link>

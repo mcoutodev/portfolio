@@ -5,10 +5,6 @@ export type ContextType = {
     setIsOpen: (isOpen: boolean) => void;
     darkMode: boolean;
     setDarkMode: (darkMode: boolean) => void;
-    sections: {
-        name: string;
-        path: string;
-    }[];
     skills: {
         name: string;
         icon: ReactNode;

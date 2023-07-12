@@ -1,10 +1,11 @@
 import { FC, PropsWithChildren, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
+import sections from '../../constants/';
 import { Context } from '../../context/Context';
 
 export const Drawer: FC<PropsWithChildren> = ({ children }) => {
-    const { isOpen, setIsOpen, sections } = useContext(Context);
+    const { isOpen, setIsOpen } = useContext(Context);
 
     return (
         <div className="drawer drawer-end">
