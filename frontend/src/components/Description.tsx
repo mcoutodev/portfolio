@@ -27,7 +27,7 @@ export const Description: FC = () => {
             </p>
 
             <p>
-                Tenho sólida experiência em TypeScript, React, PHP e Node, além
+                Tenho sólida experiência em TypeScript, React, Next e Node, além
                 de habilidades versáteis que me permitem projetar e desenvolver
                 sites, aplicativos e sistemas robustos e intuitivos.
             </p>
